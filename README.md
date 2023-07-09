@@ -20,6 +20,7 @@ So one has three goals:
 - [x] Ultimate goal implemented
 - [x] good goal implemented
 - [ ] task number goal implemented
+- [ ] goal reached dialog (set new target - view improvements)
 
 # How to help?
 In the end there will not be left so much, besides language, so if you like to make that fly in your language scope, feel free to file a ticket and past you translation there, i will incorporate this then in one of the next releases.
