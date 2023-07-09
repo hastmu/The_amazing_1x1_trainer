@@ -12,10 +12,13 @@ So one has three goals:
 * a good goal - a average time limit (120% of the average time needed so far for all active exercises) - if reached this exercised degrade over time and therefore become active until you reach the ultimate state.
 * a number of exercise per session (so set a target of 50 solved exercised for your trainee)
 
+# How does it look
+![screen](doc/screen-1.png "Idea of how it looks")
+
 # Roadmap
-- [ ] General PoC
-- [ ] Ultimate goal implemented
-- [ ] good goal implemented
+- [x] General PoC
+- [x] Ultimate goal implemented
+- [x] good goal implemented
 - [ ] task number goal implemented
 
 # How to help?
