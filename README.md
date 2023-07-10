@@ -16,7 +16,7 @@ So one has three goals:
 ![screen](doc/screen-1.png "Idea of how it looks")
 
 # How to start...
-* Option #1: Just click on the index.cdn.html and you are good to go, this will utilized all dependencies out of the provided cdn network, which may track your usage.
+* Option #1: Just click on the index.cdn.html and you are good to go, this will utilized all dependencies out of the provided cdn network, which may track your usage. (see jsdelivr.net)
 * Option #2: Just clone the repo or download the release file and do a npm install and locally open the index.html.
 
 # Roadmap
