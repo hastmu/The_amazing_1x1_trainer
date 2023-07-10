@@ -15,12 +15,18 @@ So one has three goals:
 # How does it look
 ![screen](doc/screen-1.png "Idea of how it looks")
 
+# How to start...
+* Option #1: Just click on the index.cdn.html and you are good to go, this will utilized all dependencies out of the provided cdn network, which may track your usage.
+* Option #2: Just clone the repo or download the release file and do a npm install and locally open the index.html.
+
 # Roadmap
 - [x] General PoC
 - [x] Ultimate goal implemented
 - [x] good goal implemented
 - [ ] task number goal implemented
 - [ ] goal reached dialog (set new target - view improvements)
+- next major release
+- [ ] Rank system (maybe like beginner-novice-solid-expert-superhero)
 
 # How to help?
 In the end there will not be left so much, besides language, so if you like to make that fly in your language scope, feel free to file a ticket and past you translation there, i will incorporate this then in one of the next releases.
