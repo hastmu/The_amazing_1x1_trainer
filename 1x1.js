@@ -122,7 +122,7 @@ function set_show_timeout() {
 function set_goal() {
     if ( ultimate_goal == 0 ) {
         // load first time
-        var value=localStorage.getItem("ultimate_goal")
+        var value=load_from_storage("ultimate_goal","5000")
     } else {
         var value=$("#ultimate_goal_input").val();
     }
