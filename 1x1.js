@@ -95,7 +95,7 @@ var show_timeout="load";
 function set_show_timeout() {
 
     console.log("set_show_timeout")
-    var next_show_timeout=load_from_storage("show_timeout","off")
+    var next_show_timeout=load_from_storage("show_timeout","on")
     if ( show_timeout == "load" ) {
         // load first time
         show_timeout=next_show_timeout
