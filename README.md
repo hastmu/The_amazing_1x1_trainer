@@ -17,7 +17,7 @@ So one has three goals:
 
 # How to start...
 * Option #1 (not ready at the moment): Just click on the index.cdn.html and you are good to go, this will utilized all dependencies out of the provided cdn network, which may track your usage. (see jsdelivr.net)
-* Option #2.1: Just clone the repo or download the release file 
+* Option #2: Just clone the repo or download the release file 
   * do a npm install and locally open the index.html.
   * open the index.cdn.html for using a cdn based setup.
 
@@ -27,6 +27,8 @@ So one has three goals:
 - [x] good goal implemented
 - [ ] task number goal implemented
 - [ ] goal reached dialog (set new target - view improvements)
+- [ ] complete tool tips
+- [ ] implement language button
 - next major release
 - [ ] Rank system (maybe like beginner-novice-solid-expert-superhero)
 
