@@ -22,12 +22,12 @@ So one has three goals:
 foo@bar:~$ git clone https://github.com/hastmu/The_amazing_1x1_trainer.git
 foo@bar:~$ cd The_amazing_1x1_trainer/
 ```
-  * do a npm install and locally open the index.html.
+* Option #2.1: do a npm install and locally open the index.html.
 ```console
 foo@bar:~$ npm install
 foo@bar:~$ firefox file://`pwd`/index.html
 ```
-  * open the index.cdn.html for using a cdn based setup.
+* Option #2.2: open the index.cdn.html for using a cdn based setup.
 ```console
 foo@bar:~$ firefox file://`pwd`/index.html
 ```
