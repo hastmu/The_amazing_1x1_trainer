@@ -18,8 +18,19 @@ So one has three goals:
 # How to start...
 * Option #1 (not ready at the moment): Just click on the index.cdn.html and you are good to go, this will utilized all dependencies out of the provided cdn network, which may track your usage. (see jsdelivr.net)
 * Option #2: Just clone the repo or download the release file 
+```console
+foo@bar:~$ git clone https://github.com/hastmu/The_amazing_1x1_trainer.git
+foo@bar:~$ cd The_amazing_1x1_trainer/
+```
   * do a npm install and locally open the index.html.
+```console
+foo@bar:~$ npm install
+foo@bar:~$ firefox file://`pwd`/index.html
+```
   * open the index.cdn.html for using a cdn based setup.
+```console
+foo@bar:~$ firefox file://`pwd`/index.html
+```
 
 # Roadmap
 - [x] General PoC
