@@ -29,7 +29,7 @@ foo@bar:~$ firefox file://`pwd`/index.html
 ```
 * Option #2.2: open the index.cdn.html for using a cdn based setup.
 ```console
-foo@bar:~$ firefox file://`pwd`/index.html
+foo@bar:~$ firefox file://`pwd`/index.cdn.html
 ```
 
 # Roadmap
