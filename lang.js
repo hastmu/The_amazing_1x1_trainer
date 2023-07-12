@@ -2,6 +2,11 @@
 var language
 var lang
 
+var lang_options={
+    "en": "English",
+    "de": "germany"
+}
+
 language=localStorage.getItem("language")
 if ( language ==  null ) {
      language="en"
@@ -16,7 +21,6 @@ lang={
     "on": "ON",
     "your_inputs": "Enter here your guesses...",
     "feedback_table": "Watch here your results...",
-    "on": "ON",
     "on": "ON",
     "off": "OFF",
     "start": "Let's go...",
@@ -41,11 +45,49 @@ lang={
 if ( language == "de" ) {
 
     lang={
-        "title": "Der wunderbare 1 mal 1s Trainer..."
-    }
+        "title": "Der wunderbare 1 mal 1s Trainer...",
+        "set_goals_header": "Setze dein Ziel...",
+        "number_of_tasks": "Wieviel Aufgaben willst du heute machen? (z.B. 100)",
+        "reaction_goal_question": "Ab wann bist du \"Perfekt\"? (z.B. 2500 = 2500ms)",
+        "on": "EIN",
+        "your_inputs": "Gib hier dein Ergebnis ein...",
+        "feedback_table": "Deine bisherigen Ergebnisse...",
+        "off": "AUS",
+        "start": "Los geht's...",
+        "tt_start": "Klicke hier für die nächste Aufgabe...",
+        "set-goals": "Ziele...",
+        "tt_set-goals": "Klicke hier um deine Ziele festzulegen...",
+        "reset_performance": "Rücksetzten deiner Ergebnisse",
+        "random_performance": "Verwürfeln deiner Ergebnisse",
+        "current_results": "Current Results",
+        "result_improvable": "Richtig!, nur noch schneller...",
+        "result_good": "Gute",
+        "result_prefect": "Perfekte",
+        "current_task": "Aktuelle Aufgabe",
+        "right_result": "Richtige Ergebnisse",
+        "done_well_counter": "Gelöste Aufgaben",
+        "task_feedback": "Aufgaben Rückmeldung",
+        "show_timeout": "Timeout anzeigen?",
+        "dummy": "dummy"
+        }
 
 } 
 
+// render lang menu
+
+function set_lang(t_lang) {
+    localStorage.setItem("language",t_lang)
+    location.reload()
+}
+
+function render_lang_menue(id) {
+    var t_html=""
+    for (var lang in lang_options) {
+        console.log(lang, lang_options[lang])
+        t_html+="<a class=\"dropdown-item\" href=\"#\" onclick=\"set_lang('"+lang+"')\">"+lang+" ("+lang_options[lang]+")</a>"
+    }
+    $(id).html(t_html)
+}
 
 // set main items
 

@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
         <script src="lang.js"></script>
         <script src="1x1.js"></script>
@@ -15,12 +15,20 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-3 mb-lg-0">
-                <li class="nav-item">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-flag-fill"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="langoptions">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                            <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#" onclick="next()" 
                     data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="tbu">
                         <lang>start</lang>
@@ -172,13 +180,14 @@
 </table>
 
 <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
     render_langattr()
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
     $(document).ready(init() )
+    $(document).ready(render_lang_menue("#langoptions") )
 </script>
 
 </body>

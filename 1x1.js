@@ -40,9 +40,11 @@ var last_bad=-1;
 function load_from_storage(name, def_value) {
     var value=localStorage.getItem(name)
     if ( value == null ) {
+        console.log("load_from_storage: default["+name+"] = " + def_value)
         localStorage.setItem(name,def_value)
         return def_value
     } else {
+        console.log("load_from_storage: load["+name+"] = " + value)
         return value
     }
 }
@@ -142,7 +144,7 @@ function set_goal() {
 function set_task_target() {
     if ( task_target == 0 ) {
         // load first time
-        var value=load_from_storage("task_taret",100)
+        var value=load_from_storage("task_target",100)
     } else {
         var value=$("#task_target_input").val();
     }
@@ -338,7 +340,14 @@ function renderbuttons(iconname) {
 }
 
 function update_taskcounter() {
-    $("#taskcounter").html(taskcounter)   
+    $("#taskcounter").html(taskcounter+"/"+task_target)   
+}
+
+function goal_reached() {
+    console.log("goal_reached")
+    // TODO: Goal reached dialog...
+    renderbuttons("heart")
+    setTimeout(renderbuttons,2000)
 }
 
 function next() {
@@ -347,6 +356,12 @@ function next() {
 
     // update taskcounter.
     update_taskcounter()
+    if (taskcounter == task_target) {
+        // task goal reached
+        console.log("task target reached")
+        goal_reached();
+        return
+    }
 
     // clean last help for right result
     $("#"+last_bad).removeClass("btn-success")
@@ -395,9 +410,8 @@ function next() {
             clearTimeout(progress_update)
             $("#"+last_bad).removeClass("btn-success")
             console.log("DONE! all in perfect!")
-            renderbuttons("heart")
-            setTimeout(renderbuttons,2000)
-           return
+            goal_reached();
+            return
        }
        setTimeout(next,500)
        return
