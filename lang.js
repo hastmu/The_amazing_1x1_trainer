@@ -38,6 +38,16 @@ lang={
     "done_well_counter": "Well done tasks",
     "task_feedback": "Task feedback",
     "show_timeout": "Show timeout for task",
+    "goal_reached_title": "Amazing you reached one of your goals!!!",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
+    "": "",
     "dummy": "dummy"
 }
 
@@ -98,6 +108,9 @@ function lang_set_item(item) {
         langattr=item.getAttribute("lang")
     }
     // console.log(langattr)
+    if ( lang[langattr] == undefined ) {
+        console.log("missing lang["+language+"]: "+langattr+" undefined")
+    }
     item.innerHTML=lang[langattr]
     // console.log(item.innerHTML)
 

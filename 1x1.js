@@ -348,6 +348,7 @@ function goal_reached() {
     // TODO: Goal reached dialog...
     renderbuttons("heart")
     setTimeout(renderbuttons,2000)
+    $("#goal_reached").modal("show")
 }
 
 function next() {

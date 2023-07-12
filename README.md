@@ -36,10 +36,10 @@ foo@bar:~$ firefox file://`pwd`/index.cdn.html
 - [x] General PoC
 - [x] Ultimate goal implemented
 - [x] good goal implemented
-- [ ] task number goal implemented
-- [ ] goal reached dialog (set new target - view improvements)
+- [x] task number goal implemented
+- [ ] Work-in-Progress: goal reached dialog (set new target - view improvements)
 - [ ] complete tool tips
-- [ ] implement language button
+- [x] implement language button
 - next major release
 - [ ] Rank system (maybe like beginner-novice-solid-expert-superhero)
 
