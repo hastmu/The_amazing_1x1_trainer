@@ -10,6 +10,7 @@
         <script src="lang.js"></script>
         <script src="1x1.js"></script>
 
+
     </head>
     <body>
 
@@ -51,6 +52,14 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="langoptions">
                       <a class="dropdown-item" aria-current="page" href="#" onclick="reset()"><lang>reset_performance</lang></a>
                       <a class="dropdown-item" aria-current="page" href="#" onclick="random()"><lang>random_performance</lang></a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-question-diamond-fill"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="langoptions">
+                      <a class="dropdown-item" aria-current="page" href="#" onclick="$('#about').modal('show')"><lang>about</lang></a>
                     </div>
                 </li>
             </ul>
@@ -161,8 +170,25 @@
                 </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" onclick="update_goals()">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><lang>close</lang></button>
+              <button type="button" class="btn btn-primary" onclick="update_goals()"><lang>update_goals_button</lang></button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="about" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-6" id="exampleModalLabel"><lang>about_header</lang></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <lang>about_body</lang>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><lang>close</lang></button>
             </div>
           </div>
         </div>
@@ -176,10 +202,10 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                abc
+                <lang>goal_reached_body</lang>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><lang>close</lang></button>
             </div>
           </div>
         </div>

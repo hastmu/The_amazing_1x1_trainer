@@ -39,12 +39,12 @@ lang={
     "task_feedback": "Task feedback",
     "show_timeout": "Show timeout for task",
     "goal_reached_title": "Amazing you reached one of your goals!!!",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
-    "": "",
+    "about": "About",
+    "about_header": "About me...",
+    "about_body": "This is the amazing one times one trainer<br>I will help you to learn and memories the one times one<br>from 0 to 10.<br><br>You master it in your own speed and progress<br>until you reach your ultimate time goal.<br><br>All the best.<br>More Infos under:<br><a href='https://github.com/hastmu/The_amazing_1x1_trainer'>github.com/hastmu/The_amazing_1x1_trainer</a>",
+    "close": "Close",
+    "goal_reached_body": "Task goal: <div id='task_goal_reached'></div><br>Ultimate Goals: <div id='ultimte_goal_reached'></div>",
+    "update_goals_button": "Set new goals...",
     "": "",
     "": "",
     "": "",
@@ -78,7 +78,14 @@ if ( language == "de" ) {
         "done_well_counter": "Gelöste Aufgaben",
         "task_feedback": "Aufgaben Rückmeldung",
         "show_timeout": "Timeout anzeigen?",
-        "dummy": "dummy"
+        "goal_reached_title": "Wunderbar du hast eines deiner Ziele erreicht!!!",
+        "about": "Über mich...",
+        "about_header": "Über mich...",
+        "about_body": "Das ist der wunderbare 1x1 Trainer<br>Ich helfe dir das 1x1 zu lernen von 0 bis 10.<br><br>In deiner Geschwindigkeit und deinem Fortschritt<br>bis du alles perfekt kannst.<br><br>Viel Erfolg.<br>Mehr Infos Infos unter:<br><a href='https://github.com/hastmu/The_amazing_1x1_trainer'>github.com/hastmu/The_amazing_1x1_trainer</a>",
+        "close": "Schließen",
+        "goal_reached_body": "Aufgaben für heute: <div id='task_goal_reached'></div><br>Perfekte Aufgaben: <div id='ultimte_goal_reached'></div>",
+        "update_goals_button": "Weiter mit neuen Zielen...",
+           "dummy": "dummy"
         }
 
 } 

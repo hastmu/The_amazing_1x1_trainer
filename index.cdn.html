@@ -15,11 +15,19 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-3 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-flag-fill"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="langoptions">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#" onclick="next()" 
                     data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="tbu">
@@ -36,11 +44,22 @@
                         </a>
                     </span>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#" onclick="reset()"><lang>reset_performance</lang></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-sliders"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="langoptions">
+                      <a class="dropdown-item" aria-current="page" href="#" onclick="reset()"><lang>reset_performance</lang></a>
+                      <a class="dropdown-item" aria-current="page" href="#" onclick="random()"><lang>random_performance</lang></a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#" onclick="random()"><lang>random_performance</lang></a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-question-diamond-fill"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="langoptions">
+                      <a class="dropdown-item" aria-current="page" href="#" onclick="$('#about').modal('show')"><lang>about</lang></a>
+                    </div>
                 </li>
             </ul>
             <ul class="nav nav-pills nav-fill">
@@ -150,13 +169,48 @@
                 </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" onclick="update_goals()">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><lang>close</lang></button>
+              <button type="button" class="btn btn-primary" onclick="update_goals()"><lang>update_goals_button</lang></button>
             </div>
           </div>
         </div>
     </div>
-      
+
+    <div class="modal fade" id="about" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-6" id="exampleModalLabel"><lang>about_header</lang></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <lang>about_body</lang>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><lang>close</lang></button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="goal_reached" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-6" id="exampleModalLabel"><lang>goal_reached_title</lang></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <lang>goal_reached_body</lang>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><lang>close</lang></button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+
 <table class="col-12 table  align-middle">
     <tr> 
         <td class="col-6">
@@ -180,6 +234,7 @@
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
     $(document).ready(init() )
+    $(document).ready(render_lang_menue("#langoptions") )
 </script>
 
 </body>

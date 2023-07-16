@@ -348,6 +348,19 @@ function goal_reached() {
     // TODO: Goal reached dialog...
     renderbuttons("heart")
     setTimeout(renderbuttons,2000)
+    if ( taskcounter == task_target ) {
+        $("#task_goal_reached").html("<div class='alert alert-success' role='alert'>"+taskcounter+"/"+task_target+"</div>")
+    } else {
+        $("#task_goal_reached").html("<div class='alert alert-primary' role='alert'>"+taskcounter+"/"+task_target+"</div>")
+    }
+
+    var ultimate_per = $("#state_perfect").html()
+    if ( ultimate_per == 100 ) {
+        $("#ultimte_goal_reached").html("<div class='alert alert-success' role='alert'>"+ultimate_per+"</div>")
+    } else {
+        $("#ultimte_goal_reached").html("<div class='alert alert-primary' role='alert'>"+ultimate_per+"</div>")
+    }
+
     $("#goal_reached").modal("show")
 }
 

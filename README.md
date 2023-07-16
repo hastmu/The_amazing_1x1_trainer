@@ -37,11 +37,14 @@ foo@bar:~$ firefox file://`pwd`/index.cdn.html
 - [x] Ultimate goal implemented
 - [x] good goal implemented
 - [x] task number goal implemented
-- [ ] Work-in-Progress: goal reached dialog (set new target - view improvements)
+- [x] goal reached dialog (simple version)
 - [ ] complete tool tips
 - [x] implement language button
 - next major release
 - [ ] Rank system (maybe like beginner-novice-solid-expert-superhero)
+- [ ] goal reached dialog (set new target - view improvements)
+- next major release
+- [ ] Multiplayer? (kind of class-room exercise)
 
 # How to help?
 In the end there will not be left so much, besides language, so if you like to make that fly in your language scope, feel free to file a ticket and past you translation there, i will incorporate this then in one of the next releases.
