@@ -16,7 +16,7 @@ So one has three goals:
 ![screen](doc/screen-1.png "Idea of how it looks")
 
 # How to start...
-* Option #1 (not ready at the moment): Just click on the index.cdn.html and you are good to go, this will utilized all dependencies out of the provided cdn network, which may track your usage. (see jsdelivr.net)
+* Option #1 (accepting terms of usage of jsdelivr.net/github.io): Just click on the [index.cdn.html](https://hastmu.github.io/1x1/index.html) and you are good to go, this will utilized all dependencies out of the provided cdn network, which may track your usage. (see jsdelivr.net)
 * Option #2: Just clone the repo or download the release file 
 ```console
 foo@bar:~$ git clone https://github.com/hastmu/The_amazing_1x1_trainer.git
@@ -38,7 +38,7 @@ foo@bar:~$ firefox file://`pwd`/index.cdn.html
 - [x] good goal implemented
 - [x] task number goal implemented
 - [x] goal reached dialog (simple version)
-- [ ] complete tool tips
+- [x] complete tool tips
 - [x] implement language button
 - next major release
 - [ ] Rank system (maybe like beginner-novice-solid-expert-superhero)
